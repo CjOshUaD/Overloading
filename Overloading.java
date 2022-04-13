@@ -1,4 +1,5 @@
 public class Overloading {
+    // inputs
     private static int num1 = 30;
     private static int num2 = 50;
 
@@ -6,19 +7,23 @@ public class Overloading {
     private static double Num2 = 3.3;
     private static double Num3 = 64.4;
 
+    // method for integers
     private static int computesum1(int num1, int num2) {
         return num1 + num2;
     }
 
+    // method for doubles
     private static double computesum2(double Num1, double Num2, double Num3) {
         return Num1 + Num2 + Num3;
 
     }
 
+    // get the greatest value among the integers
     private static int getvalue_integers() {
         return Math.max(num1, num2);
     }
 
+    // get the greatest value among doubles
     private static double getvalue_double() {
         return Math.max(Num1, Math.max(Num2, Num3));
     }
